@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Estilizando tag do html */
@@ -36,11 +38,32 @@ a {
     color: white;
 }
 
+main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 /* Estilizar id */
 #simulacao {
-    background-color: blueviolet;
+    background-color: rgba(235, 245, 248, 0.622);
+    width: 100%;
+    height: 300px;
+    border: 1px solid #f3f2f2;
+    border-radius: 8px;
+}
+
+#simulacao h2 {
+    color: #0077bd;
+    margin-left: 20px;
 }
 
 #resultado {
@@ -48,3 +71,53 @@ a {
 }
 
 /* Estilizar por classes */
+.linha-form {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.linha-form label {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(46, 46, 46);
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input-form input {
+    width: 80%;
+    height: 26px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.btn-calcular {
+    width: 140px;
+    height: 40px;
+    background-color: #0077bd;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-limpar
+{
+    width: 90px;
+    height: 40px;
+    background-color: rgb(214, 226, 231);
+    color: #0077bd;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+}
+
+
